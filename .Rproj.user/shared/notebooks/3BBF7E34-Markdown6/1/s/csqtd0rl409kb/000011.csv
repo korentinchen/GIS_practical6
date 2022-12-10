@@ -1,0 +1,6 @@
+"0","library(stringr)"
+"0","BoroughMap <- LondonBoroughs %>%"
+"0","  dplyr::filter(str_detect(GSS_CODE, ""^E09""))%>%"
+"0","  st_transform(., 27700)"
+"0",""
+"0","qtm(BoroughMap)"

@@ -1,0 +1,13 @@
+"0","#remove duplicates"
+"0","library(tidyverse)"
+"0","library(sf)"
+"0","BluePlaques <- distinct(BluePlaques)"
+"0","BluePlaquesSub <- BluePlaques[BoroughMap,]"
+"0","#check to see that they've been removed"
+"0","tmap_mode(""plot"")"
+"2","tmap mode set to plotting
+"
+"0","tm_shape(BoroughMap) +"
+"0","  tm_polygons(col = NA, alpha = 0.5) +"
+"0","tm_shape(BluePlaquesSub) +"
+"0","  tm_dots(col = ""blue"")"
